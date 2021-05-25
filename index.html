@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinar Anmeldung</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qE4XXTo20DYYMXgdjS8y1UCmteP30T7CZpOqs0b1UvD2uuhRdk_IMYdAKVwNifHghXs&usqp=CAU"
+    />
+    <script
+      src="https://kit.fontawesome.com/43751d584e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-2">
+            <a href="https://sevdesk.de/">
+              <img
+                src="images/logo_sevdesk.png"
+                alt="logo"
+                class="logo-sevdesk"
+              />
+            </a>
+          </div>
+          <div class="col-7">
+            <ul class="ul-menu">
+              <li class="li-menu">
+                <a href="https://sevdesk.de/funktionen/" class="links-menu"
+                  >Funktionen</a
+                >
+              </li>
+              <li class="li-menu">
+                <a href="https://sevdesk.de/preise/" class="links-menu"
+                  >Preise</a
+                >
+              </li>
+              <li class="li-menu">
+                <a href="https://sevdesk.de/branchen/" class="links-menu"
+                  >Branchen</a
+                >
+              </li>
+              <li class="li-menu">
+                <a href="https://sevdesk.de/hilfe-center/" class="links-menu"
+                  >Service</a
+                >
+              </li>
+              <li class="li-menu">
+                <a
+                  href="https://sevdesk.de/fuer-steuerberater/"
+                  class="links-menu"
+                  >Für Steuerberater</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-1">
+            <button class="login-button">LOGIN</button>
+          </div>
+          <div class="col-2">
+            <button class="test-button btn btn-primary">
+              KOSTENLOS TESTEN
+            </button>
+          </div>
+        </div>
+      </header>
+      <h1>Anmeldung Live-Webinar</h1>
+      <section class="workshop">
+        <div class="row">
+          <div class="col workshop-info">
+            <h3>Wie schreibe ich Rechnungen und Angebote?</h3>
+            <ul class="fa-ul">
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-check check-icon"></i></span
+                ><strong>Datum:</strong> 29.05.2021
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-check check-icon"></i></span
+                ><strong>Uhrzeit:</strong> 11:00
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-check check-icon"></i></span
+                ><strong>Dauer:</strong> ca. 1h
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-check check-icon"></i></span
+                ><strong>Webinarleiter:</strong> Alex von sevDesk
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fas fa-check check-icon"></i
+                ></span>
+                <strong>Buchhaltung Experten:</strong> Dennis und Milad von
+                taavas
+              </li>
+            </ul>
+            <p>
+              Wir machen eine Tour zum Thema:
+              <strong>Rechnungen und Angebote</strong> schreiben. Unter anderem
+              zeigen wir dir welche
+              <strong>allgemeine Einstellungen</strong> nötig sind, um Angebote
+              und Rechnungen zu erstellen, wie du
+              <strong>Kontakte anlegen und verwalten</strong> kannst, wie du
+              <strong>Teilrechnungen</strong> erstellen kannst.
+            </p>
+            <div class="countdown-titel">Dein Webinar startet in:</div>
+            <div class="counutdown" id="clockdiv id">
+              <div class="row">
+                <div class="col-2 countdown">
+                  <div class="days"><span id="days">00</span> <br />Tagen</div>
+                </div>
+                <div class="col-2 countdown">
+                  <div class="hours">
+                    <span id="hours">00</span> <br />Stunden
+                  </div>
+                </div>
+                <div class="col-2 countdown">
+                  <div class="minutes">
+                    <span id="minutes">00</span> <br />Minuten
+                  </div>
+                </div>
+                <div class="col-2 countdown">
+                  <div class="seconds">
+                    <span id="seconds">00</span> <br />Sekunden
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card video-card">
+              <iframe
+                src="https://www.youtube.com/embed/LtDKFbdjGm4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <form id="submit-form">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Vorname"
+                      autocomplete="off"
+                      id="firstname-text-input"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nachname"
+                      autocomplete="off"
+                      id="lastname-text-input"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-Mail Adresse"
+                      autocomplete="off"
+                      id="email-text-input"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    value="JETZT KOSTENLOS ANMELDEN"
+                    class="btn btn-primary submit-button"
+                    id="submit-button"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <section class="avantages">
+        <h2>Deine Vorteile durch die Teilnahme am Webinar</h2>
+        <br />
+        <div class="row icons-line">
+          <div class="col-4">
+            <img src="images/ideas.svg" alt="ideas" class="icons-avantages" />
+          </div>
+          <div class="col-4">
+            <img src="images/steps.svg" alt="ideas" class="icons-avantages" />
+          </div>
+          <div class="col-4">
+            <img
+              src="images/question.svg"
+              alt="ideas"
+              class="icons-avantages"
+            />
+          </div>
+        </div>
+        <div class="row text-line">
+          <div class="col-4">
+            <div class="description">EFFIZIENT</div>
+            Du lernst in <strong>weniger Zeit</strong> wie du Rechnungen und
+            Angebote schreiben kannst.
+          </div>
+          <div class="col-4">
+            <div class="description">DETAILLIERT</div>
+            Du bekommst
+            <strong>Schritt für Schritt einen detaillierten Einblick</strong> in
+            die Software und verhinderst so das Hin- und Herklicken.
+          </div>
+          <div class="col-4">
+            <div class="description">PERSÖNLICH</div>
+            Am Ende des Webinars hast du die Möglichkeit deine
+            <strong>Fragen zu stellen</strong>.
+          </div>
+        </div>
+      </section>
+      <hr />
+      <footer>
+        <div class="row">
+          <div class="col-3">
+            <ul>
+              <li><strong>SEVDESK</strong></li>
+              <li>Karriere</li>
+              <li>Team</li>
+              <li>Presse</li>
+              <li>Impressum</li>
+              <li>Datenschutz & IT-Sicherheit</li>
+              <li>Affiliate & Partner</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><strong>THEMEN</strong></li>
+              <li>Buchhaltungssoftware</li>
+              <li>Rechnungsprogramm online</li>
+              <li>Online-Lagersoftware</li>
+              <li>Kundenverwaltung</li>
+              <li>Integrationen</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><strong>STEUERBERATER</strong></li>
+              <li>Steuerberaterportal</li>
+              <li>Steuerberater Community</li>
+              <li>Steuerberater Webinar</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><strong>SERVICE</strong></li>
+              <li>Blog</li>
+              <li>FAQ</li>
+              <li>Selbstständig machen</li>
+              <li>Online-Hilfe</li>
+              <li>Webinare</li>
+              <li>Steuerberater suchen</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
